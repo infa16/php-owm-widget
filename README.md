@@ -12,7 +12,7 @@ To install the package, add the row below to your composer.json file:
 
 ```
 "require": {
-"infa16/weather": "dev-master"
+   "infa16/weather": "dev-master"
 }
 ```
 
@@ -20,6 +20,7 @@ To add CWeather, the easiest way is to initialize it when/where you need it:
 
 ```
 $weather = new \infa16\Weather\CWeather("<appid>", "<city>");
+$html = $weather.view();
 ```
 
 
