@@ -1,0 +1,53 @@
+
+.weather {
+    background-color: #ecf2ff;
+    border: 1px solid #85acfe;
+    width: 170px;
+    margin: 24px;
+    padding: 5px;
+    box-shadow: 10px 10px 5px #b3cbff;
+
+}
+
+.weather-city {
+    display: block;
+    clear: left;
+    font-size: xx-large;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.weather-img {
+    float: left;
+}
+
+.weather-temp {
+    display: block;
+    float: left;
+    font-size: x-large;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.weather-cloud {
+    display: block;
+    clear: left;
+}
+
+.weather-humidity {
+    display: block;
+    clear: left;
+    margin-top: 3px;
+}
+
+.weather-sundown {
+    display: block;
+    clear: left;
+    margin-top: 3px;
+}
+
+.weather-sunup {
+    display: block;
+    clear: left;
+    margin-top: 3px;
+}

@@ -1,0 +1,20 @@
+{
+  "name": "infa16/weather",
+  "type": "library",
+  "description": "Classes for a weather module",
+  "keywords": ["module", "html", "micro", "education"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ingrid Bergman",
+      "email": "infa16@bth.student.se",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.4"
+  },
+  "autoload": {
+    "psr-4": { "infa16\\": "src/" }
+  }
+}
