@@ -1,8 +1,13 @@
 {
   "name": "infa16/weather",
   "type": "library",
-  "description": "Classes for a weather module",
-  "keywords": ["module", "html", "micro", "education"],
+  "description": "Classes for a weather widget",
+  "keywords": [
+    "module",
+    "html",
+    "micro",
+    "education"
+  ],
   "license": "MIT",
   "authors": [
     {
@@ -14,7 +19,12 @@
   "require": {
     "php": ">=5.4"
   },
+  "require-dev": {
+    "phpunit/phpunit": "5.6.*"
+  },
   "autoload": {
-    "psr-4": { "infa16\\": "src/" }
+    "psr-4": {
+      "infa16\\": "src/"
+    }
   }
 }

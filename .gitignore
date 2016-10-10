@@ -4,3 +4,6 @@
 # Tests
 report
 coverage.clover
+/vendor
+/.idea
+/composer.lock

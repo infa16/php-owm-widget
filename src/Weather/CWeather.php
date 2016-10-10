@@ -10,8 +10,8 @@ class CWeather
 
     /**
      * CWeather constructor.
-     * @param $appid
-     * @param $city
+     * @param string $appid
+     * @param string $city
      */
     public function __construct($appid, $city)
     {
@@ -20,7 +20,7 @@ class CWeather
     }
 
     /**
-     * @param string $units
+     * @param string $units 'metric' or 'imperial'
      */
     public function setUnits($units)
     {
@@ -45,10 +45,16 @@ class CWeather
         return $html;
     }
 
-    private function getData()
+    public function getUrl()
     {
-        $response = file_get_contents("http://api.openweathermap.org/data/2.5/weather?q="
-            . $this->city . "&appid=" . $this->appid . "&units=" . $this->units);
+        return "http://api.openweathermap.org/data/2.5/weather?q=" .
+        $this->city . "&appid=" . $this->appid . "&units=" . $this->units;
+    }
+
+
+    protected function getData()
+    {
+        $response = file_get_contents($this->getUrl());
         return json_decode($response, true);
     }
 }
