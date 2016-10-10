@@ -6,3 +6,4 @@ filter:
 
 tools:
     external_code_coverage: true
+        runs: 2
