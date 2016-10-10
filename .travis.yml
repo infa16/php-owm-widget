@@ -1,8 +1,3 @@
-notifications:
-  email:
-    on_success: never
-    on_failure: never
-
 language: php
 php:
   - 7.0
@@ -11,9 +6,7 @@ php:
 
 before_script:
   - wget https://scrutinizer-ci.com/ocular.phar
-
-script:
-  - phpunit --bootstrap test/config.php test
+  - composer install
 
 script:
   - phpunit --bootstrap test/config.php --coverage-clover coverage.clover test
