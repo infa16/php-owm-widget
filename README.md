@@ -1,5 +1,6 @@
 # CWeather
 ![Travis Badge](https://travis-ci.org/infa16/php-owm-widget.svg?branch=master "Build status")
+![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/infa16/php-owm-widget/badges/quality-score.png?b=master)
 
 ## Introduction
 CWeather is a class for generating a weather-module that can be implemented on
